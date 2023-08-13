@@ -8,9 +8,11 @@ use App\Http\Controllers\Site\SiteController;
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/test', function () {
-    dd(array_column(SupportStatus::cases(), 'name'));
-});
+//Route::get('/test', function () {
+    //dd(array_column(SupportStatus::cases(), 'name'));
+//});
+
+
 
 Route::delete('/supports/{id}', [SupportController::class, 'destroy'])->name('supports.destroy');
 
